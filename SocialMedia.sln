@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.Infrastructure"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7212648B-E4B7-4264-864D-9BC64E9DB6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.UnitTest", "SocialMedia.UnitTest\SocialMedia.UnitTest.csproj", "{68209D94-F6C5-4522-A062-3EED67C6357D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.UnitTest", "SocialMedia.UnitTest\SocialMedia.UnitTest.csproj", "{68209D94-F6C5-4522-A062-3EED67C6357D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.IntegrationTest", "SocialMedia.IntegrationTest\SocialMedia.IntegrationTest.csproj", "{1CE19B7E-8B89-4435-B075-836265CE386A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.IntegrationTest", "SocialMedia.IntegrationTest\SocialMedia.IntegrationTest.csproj", "{1CE19B7E-8B89-4435-B075-836265CE386A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
