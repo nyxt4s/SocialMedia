@@ -1,14 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace SocialMedia.core.Entities
+#nullable disable
+
+namespace SocialMedia.Core.Entities
 {
-    public class Post
+    public partial class Post
     {
+        public Post()
+        {
+            Comments = new HashSet<Comment>();
+        }
+
         public int PostId { get; set; }
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public DateTime Date { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
 
+        public virtual User IdUsuarioNavigation { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
     }
 }
