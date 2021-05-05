@@ -1,12 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SocialMedia.core.Entities;
 using SocialMedia.core.Interfaces;
 using SocialMedia.Core.Entities;
 using SocialMedia.Infrastructure.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SocialMedia.Infrastructure.Repositories
@@ -18,9 +14,9 @@ namespace SocialMedia.Infrastructure.Repositories
         {
             _context = context;
         }
-        public async Task <IEnumerable<Publicacion>> GetPosts()
+        public async Task <IEnumerable<Post>> GetPosts()
         {
-            var posts = await _context.Publicacions.ToListAsync();
+            var posts = await _context.Posts.ToListAsync();
             return posts;
         }
     }
