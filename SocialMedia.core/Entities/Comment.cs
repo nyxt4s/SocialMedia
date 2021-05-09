@@ -6,7 +6,7 @@ namespace SocialMedia.Core.Entities
 {
     public partial class Comment
     {
-        public int IdComment { get; set; }
+        public int CommentId { get; set; }
         public int IdPost { get; set; }
         public int UserID { get; set; }
         public string Description { get; set; }

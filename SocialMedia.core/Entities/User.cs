@@ -13,11 +13,11 @@ namespace SocialMedia.Core.Entities
             Post = new HashSet<Post>();
         }
 
-        public int IdUsuario { get; set; }
+        public int UseId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public DateTime DateBird { get; set; }
+        public DateTime DateBirth { get; set; }
         public string Phone { get; set; }
         public bool IsActive { get; set; }
 
