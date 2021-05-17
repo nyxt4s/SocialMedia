@@ -25,5 +25,12 @@ namespace SocialMedia.Infrastructure.Repositories
             var posts = await _context.Posts.FirstOrDefaultAsync(x => x.PostId == id);
             return posts;
         }
+
+        public async Task InsertPost (Post post)
+        {
+            _context.Add(post);
+            await _context.SaveChangesAsync();
+        }
+        
     }
 }
